@@ -30,9 +30,33 @@ header .logo img {
 }
 
 header nav.menu-mobile {
-    display: none;
+    margin-top: 7px;
     float: right;
+    width: 28px;
+    height: 28px;
+    background-image: url('../images/menu-mobile.png');
+    background-size: 100% 100%;
+    display: none;
+    cursor: pointer;
 }
+
+nav.menu-mobile ul {
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+    text-transform: uppercase;
+    display: none;
+}
+
+nav.menu-desktop ul li {
+    padding: 10px 0;
+
+}
+
 
 header nav.menu-desktop {
     float: right;
@@ -165,6 +189,60 @@ section.perfil-container .texto-perfil p {
     margin-top: 10px;
 }
 
+section.videos {
+    padding: 50px 0;
+}
+
+section.videos .box-video {
+    float: left;
+    width: 33.3%;
+    padding-top: calc(33.3% * 0.6);
+    position: relative;
+}
+
+section.videos iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+}
+
+section.tratamentos .tratamento-container {
+    float: left;
+    width: 33.3%;
+    padding: 10px 0;
+}
+
+section.tratamentos .tratamento-title {
+
+    text-align: center;
+}
+
+section.tratamentos .tratamento-title h2 {
+    font-size: 22px;
+    color: #698293;
+}
+
+section.tratamentos .tratamento-single {
+    padding: 20px;
+}
+
+section.tratamentos .tratamento-single h2 {
+    font-size: 18px;
+    color: #737373;
+}
+
+section.tratamentos .tratamento-single p {
+    font-size: 14px;
+    margin-top: 7px;
+    color: #b4b4b4;
+}
+
+
+
+/*Responsivo 768*/
 @media (max-width: 768px) {
 
 
@@ -201,9 +279,15 @@ section.perfil-container .texto-perfil p {
         padding: 30px 2%;
     }
 
+    section.perfil-container .perfil-wraper {
+        padding-top: 0;
+    }
+
     section.perfil-container .perfil-wraper-2 {
         display: inline-block;
         text-align: center;
+        height: auto;
+        position: static;
     }
 
     section.perfil-container .img-perfil {
@@ -229,12 +313,20 @@ section.perfil-container .texto-perfil p {
         width: 100%;
     }
 
+    section.videos {
+        text-align: center;
+    }
 
-
-
+    section.videos .box-video {
+        width: 70%;
+        float: none;
+        display: inline-block;
+        padding-top: calc(70% * 0.6);
+    }
 
 }
 
+/*Responsivo 580*/
 @media (max-width: 580px) {
 
     header .logo img {
@@ -252,6 +344,40 @@ section.perfil-container .texto-perfil p {
         align-items: center;
         padding-left: 30px;
         padding-right: 30px;
+    }
+
+    section.videos .box-video {
+        width: 100%;
+        padding-top: calc(100% * 0.6);
+    }
+
+}
+
+/*Responsivo 320*/
+@media (max-width: 320px) {
+
+
+    section.servicos>.container {
+        top: -25px;
+    }
+
+
+    section.servicos>.container .box-servico:nth-of-type(1) {
+        width: 90%;
+        max-width: 300px;
+        padding: 30px 2%;
+    }
+
+    section.servicos>.container .box-servico:nth-of-type(2) {
+        width: 94%;
+        max-width: 310px;
+        padding: 40px 2%;
+    }
+
+    section.servicos>.container .box-servico:nth-of-type(3) {
+        width: 90%;
+        max-width: 300px;
+        padding: 30px 2%;
     }
 
 }

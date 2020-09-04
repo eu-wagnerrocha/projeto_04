@@ -344,7 +344,118 @@ section.social .social-fb {
     font-size: 13px;
 }
 
+section.contato {
+    padding: 60px 2%;
+}
 
+section.contato .titulo-contato {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section.contato .titulo-contato h2 {
+    font-size: 22px;
+    color: #698293;
+}
+
+section.contato form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.form-wraper {
+    float: left;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.form-wraper span {
+    font-size: 15px;
+    color: #b4b4b4;
+}
+
+.form-wraper input[type=text] {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 9px;
+    border: 1px solid #dadada;
+    margin-top: 8px;
+}
+
+.form-wraper textarea {
+    width: 100%;
+    height: 121px;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #dadada;
+    /* resize: horizontal;
+    resize: vertical; */
+}
+
+.form-wraper input[type=submit] {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+    height: 35px;
+    border: 0;
+    background-color: #688293;
+    color: white;
+    cursor: pointer;
+}
+
+section.footer-section {
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+    background-color: #698293;
+    text-align: center;
+}
+
+.box-footer {
+    float: left;
+    width: calc(100% / 3);
+    padding-top: calc(50% / 3);
+    padding: 40px 0;
+    border: 5px solid #698293;
+    ;
+}
+
+.title-box h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.title-box p {
+    margin-top: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+footer.footer {
+    float: left;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #576975;
+}
+
+footer.footer .all-rigth {
+    text-align: center;
+}
+
+footer.footer .copy p {
+    font-size: 15px;
+    color: white;
+}
 
 
 /*Responsivo 1024*/
@@ -478,6 +589,15 @@ section.social .social-fb {
     section.videos .box-video {
         width: 100%;
         padding-top: calc(100% * 0.6);
+    }
+
+    .w50 {
+        width: 100%;
+    }
+
+    .box-footer {
+        width: 100%;
+        padding: 5px;
     }
 
 }
